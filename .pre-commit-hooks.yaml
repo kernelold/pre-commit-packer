@@ -1,0 +1,16 @@
+---
+- id: packer-validate
+  name: Packer validate
+  description: Runs packer validate command
+  entry: packer-validate.sh
+  language: script
+  files: (\.pkr\.hcl)$
+  pass_filenames: true
+
+- id: packer-fmt
+  name: Packer fmt
+  description: Runs packer fmt command
+  entry: packer-fmt.sh
+  language: script
+  files: (\.pkr\.hcl)$
+  pass_filenames: true
