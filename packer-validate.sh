@@ -9,6 +9,11 @@ main() {
 parse_cmdline_() {
   for argv in "$@"; do
     case $argv in
+      -var-file)
+        ARGS+=("$argv")
+        ARGS+=("$2")
+        shift 2
+        ;;
       -var)
         ARGS+=("$argv")
         ARGS+=("$2")

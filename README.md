@@ -57,3 +57,11 @@ Examples:
         args: [ '-var', 'gitCommit=000', '-var', "awsAccount=0000000", '-var', 'securityGroupIds=["sg-000"]' ]
 
 ```
+
+2. Validate with a given var-file:
+```
+      - id: packer-validate
+        args: [
+          "-var-file", "packer_validate_vars.hcl"
+        ]
+```

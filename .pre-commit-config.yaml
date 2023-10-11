@@ -1,5 +1,5 @@
 repos:
-  - repo: git://github.com/pre-commit/pre-commit-hooks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.0.1
     hooks:
       - id: check-merge-conflict
@@ -13,12 +13,12 @@ repos:
     hooks:
       - id: shellcheck
 
-  - repo: git://github.com/Lucas-C/pre-commit-hooks
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
     rev: v1.1.9
     hooks:
       - id: forbid-crlf
 
-  - repo: git://github.com/codespell-project/codespell
+  - repo: https://github.com/codespell-project/codespell
     rev: v2.0.0
     hooks:
       - id: codespell
